@@ -10,11 +10,13 @@ function App() {
   
   useEffect(() => {
     dispatch(calculateTotals());
-  },[cartItems])
+  },[cartItems, dispatch])
   
-  return <main>
-    <Navbar />
-    <CartContainer />
-  </main>
+  return (
+    <main>
+      <Navbar />
+      <CartContainer />
+    </main>
+  );
 }
 export default App;
